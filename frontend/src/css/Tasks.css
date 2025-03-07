@@ -1,0 +1,33 @@
+
+/* Ensures the tasks page spans the full viewport height,
+   complementing "bg-light min-vh-100" in the JSX */
+   .tasks-page {
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light gray to match Bootstrap's bg-light */
+  }
+  
+  /* Optional hover effect for each task item */
+  .list-group-item:hover {
+    background-color: #f1f3f5;
+  }
+  
+  /* Style for completed tasks (strike-through & lighter color) */
+  .completed-task span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* If you'd like extra spacing or style for the text vs. actions, you can add: */
+  .task-text {
+    flex: 1; /* Let the text area take more space */
+    margin-right: 1rem; 
+  }
+  
+  /* Slight spacing between action buttons */
+  .task-actions button {
+    margin-right: 0.3rem;
+  }
+  .task-actions button:last-child {
+    margin-right: 0;
+  }
+  

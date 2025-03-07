@@ -1,0 +1,48 @@
+
+/* Container to provide a full-page feel with spacing and a light background */
+.history-container {
+    min-height: 100vh;       /* Fill the viewport height */
+    background-color: #f8f9fa; /* Matches Bootstrap's light gray */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Center the heading, give extra spacing, and a bolder style */
+  .history-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #343a40; /* Darker gray text */
+  }
+  
+  /* Wrap the back button in a flex container for easy centering or alignment */
+  .back-button-container {
+    display: flex;
+    justify-content: flex-start; /* or center, if you prefer */
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for the list of history items */
+  .history-list {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden; /* so the bottom border doesn't break if items have a hover */
+  }
+  
+  /* Each list-group-item can have a subtle hover effect */
+  .history-list .list-group-item:hover {
+    background-color: #f1f3f5; /* a slightly lighter gray on hover */
+  }
+  
+  /* Emphasize the action text in each history entry */
+  .history-list .list-group-item strong {
+    color: #495057;
+    margin-right: 0.5rem;
+  }
+  
+  /* The date/time is float-end, we lighten it a bit more for a subtle look */
+  .history-list .list-group-item .text-muted {
+    color: #6c757d !important; 
+    font-size: 0.85rem; 
+  }
+  

@@ -1,0 +1,25 @@
+/* Overall container (optional custom background or extra spacing) */
+.home-container {
+    /* Example: light background color for the page section */
+    background-color: #f8f9fa;
+    padding-bottom: 30px; /* Extra spacing at the bottom */
+  }
+  
+  /* Card overrides (optional) */
+  .home-container .card {
+    border-radius: 8px;
+    border: 1px solid #dee2e6; /* Subtle border color */
+    background-color: #fff;    /* White background */
+  }
+  
+  /* Card heading style */
+  .home-container .card h2 {
+    font-weight: 600; 
+    color: #333;
+  }
+  
+  /* Paragraph style */
+  .home-container .card p {
+    color: #555;
+  }
+  

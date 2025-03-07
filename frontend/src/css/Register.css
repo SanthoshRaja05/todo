@@ -1,0 +1,31 @@
+.container.register-container {
+    background-color: #f8f9fa; /* A light grey from Bootstrap’s color palette */
+    border: 1px solid #dee2e6; /* Subtle border */
+    border-radius: 5px;
+    padding: 2rem;
+  }
+  
+  /* Center the heading and give it extra spacing */
+  .register-container h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 600; /* Slightly bolder text */
+    color: #333;
+  }
+  
+  /* Adjust label styles */
+  .form-label {
+    font-weight: 500;
+    color: #495057; /* Standard Bootstrap text color */
+  }
+  
+  /* Add some margin to the button */
+  .btn.btn-primary {
+    margin-top: 1rem;
+  }
+  
+  /* Link styling for "Already have an account?" section */
+  .text-center.mt-3 {
+    margin-top: 1.5rem !important;
+    font-size: 0.9rem;
+  }
+  
