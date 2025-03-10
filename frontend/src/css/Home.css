@@ -1,25 +1,54 @@
-/* Overall container (optional custom background or extra spacing) */
+/* Home.css */
+
+/* Overall background for the home section with a subtle gradient */
 .home-container {
-    /* Example: light background color for the page section */
-    background-color: #f8f9fa;
-    padding-bottom: 30px; /* Extra spacing at the bottom */
-  }
-  
-  /* Card overrides (optional) */
-  .home-container .card {
-    border-radius: 8px;
-    border: 1px solid #dee2e6; /* Subtle border color */
-    background-color: #fff;    /* White background */
-  }
-  
-  /* Card heading style */
-  .home-container .card h2 {
-    font-weight: 600; 
-    color: #333;
-  }
-  
-  /* Paragraph style */
-  .home-container .card p {
-    color: #555;
-  }
-  
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 50px 0;
+}
+
+/* Enhance the card appearance */
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+/* Style for the main title */
+.card-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+/* Paragraph styling for improved readability */
+.card-text {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Standard button styling with smooth transitions */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects for primary button */
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Hover effects for outline button */
+.btn-outline-primary:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+/* Footer styling for a subtle finish */
+footer {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  color: #6c757d;
+}

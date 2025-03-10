@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
+import './Navbar.css'; // Import the custom CSS for additional styles
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-      <div className="container-fluid">
-        
+    <nav className="navbar navbar-expand-md navbar-dark navbar-custom sticky-top shadow">
+      <div className="container">
         {/* Brand / Logo */}
         <Link to="/" className="navbar-brand fw-bold">
           ToDo List
@@ -27,15 +27,12 @@ function Navbar() {
 
         {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="mainNav">
-          <ul className="navbar-nav ms-auto">
-            {/* Example: Home link */}
+          <ul className="navbar-nav ms-auto align-items-center">
             <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <Link to="/" className="nav-link text-uppercase fw-semibold">
                 Home
               </Link>
             </li>
-
-            
             {/* Account Dropdown */}
             <li className="nav-item dropdown">
               <span
@@ -45,14 +42,9 @@ function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                {/* Optional icon */}
-                <FaUserCircle className="me-1" />
+                <FaUserCircle className="me-1" size={20} />
                 Account
               </span>
-              {/* 
-                dropdown-menu-end aligns dropdown to the right edge.
-                Remove if you prefer left alignment.
-              */}
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
                 <li>
                   <Link to="/register" className="dropdown-item">

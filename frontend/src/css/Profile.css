@@ -1,0 +1,28 @@
+/* src/css/Profile.css */
+
+/* Full-height background with flex centering */
+.profile-container {
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light gray background from Bootstrap palette */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* The card styling */
+  .profile-card {
+    width: 100%;
+    max-width: 500px; /* Matches inline style in the component (optional) */
+    border-radius: 8px;
+  }
+  
+  /* Example: style the card title a bit more */
+  .profile-card .card-title {
+    font-weight: 700;
+    color: #343a40; /* Darker gray for heading text */
+  }
+  
+  /* Optional: add subtle hover effect or shadow enhancements if desired */
+  .profile-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  

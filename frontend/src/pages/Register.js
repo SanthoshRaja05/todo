@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useNavigate, Link } from 'react-router-dom';
-import '../css/Register.css'; // <-- Import custom CSS
+import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
+import '../css/Register.css'; // Import custom CSS
 
 function Register() {
   const [username, setUsername] = useState('');
@@ -33,60 +34,83 @@ function Register() {
   };
 
   return (
-    <div className="container register-container mt-5">
-      <h2 className="text-center mb-4">Register</h2>
-      <form onSubmit={handleRegister} className="mx-auto" style={{ maxWidth: '400px' }}>
-        
-        {/* Username */}
-        <div className="mb-3">
-          <label htmlFor="username" className="form-label">Username</label>
-          <input
-            type="text"
-            className="form-control"
-            id="username"
-            placeholder="Enter username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
+    <div className="register-container">
+      <div className="container py-5">
+        <div className="row justify-content-center">
+          <div className="col-md-6 col-lg-4">
+            <div className="card shadow border-0">
+              <div className="card-body">
+                <h2 className="card-title text-center mb-4">Register</h2>
+                <form onSubmit={handleRegister}>
+                  {/* Username */}
+                  <div className="mb-3">
+                    <label htmlFor="username" className="form-label">Username</label>
+                    <div className="input-group">
+                      <span className="input-group-text">
+                        <FaUser />
+                      </span>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="username"
+                        placeholder="Enter username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        required
+                      />
+                    </div>
+                  </div>
 
-        {/* Email */}
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email</label>
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            placeholder="Enter email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        
-        {/* Password */}
-        <div className="mb-3">
-          <label htmlFor="password" className="form-label">Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="password"
-            placeholder="Enter password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
+                  {/* Email */}
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">Email</label>
+                    <div className="input-group">
+                      <span className="input-group-text">
+                        <FaEnvelope />
+                      </span>
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                      />
+                    </div>
+                  </div>
 
-        <button type="submit" className="btn btn-primary w-100">
-          Register
-        </button>
-      </form>
+                  {/* Password */}
+                  <div className="mb-3">
+                    <label htmlFor="password" className="form-label">Password</label>
+                    <div className="input-group">
+                      <span className="input-group-text">
+                        <FaLock />
+                      </span>
+                      <input
+                        type="password"
+                        className="form-control"
+                        id="password"
+                        placeholder="Enter password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                      />
+                    </div>
+                  </div>
 
-      <div className="text-center mt-3">
-        Already have an account? <Link to="/login">Login</Link>
-      </div>
+                  <button type="submit" className="btn btn-primary w-100">
+                    Register
+                  </button>
+                </form>
+                <div className="text-center mt-3">
+                  Already have an account? <Link to="/login">Login</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
   );
 }

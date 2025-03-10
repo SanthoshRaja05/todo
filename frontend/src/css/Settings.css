@@ -1,0 +1,44 @@
+/* src/css/Settings.css */
+
+/* Full-page container with a light background */
+.settings-container {
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light gray from Bootstrap */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Card styling */
+  .settings-card {
+    width: 100%;
+    max-width: 500px; /* Restrict width on larger screens */
+    border-radius: 8px;
+  }
+  
+  /* Optional card hover effect */
+  .settings-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Dark mode override */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  body.dark-mode .card {
+    background-color: #444;
+    color: #fff;
+    border: none;
+  }
+  
+  body.dark-mode .form-check-input {
+    background-color: #555;
+    border: 1px solid #666;
+  }
+  
+  body.dark-mode .btn-primary {
+    background-color: #555;
+    border-color: #777;
+  }
+  

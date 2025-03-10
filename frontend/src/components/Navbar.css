@@ -1,73 +1,36 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    position: relative; /* Positioning context for dropdown */
-    /* overflow: hidden;  <-- Removed so text doesn't get clipped */
-  }
-  
-  /* Logo styling */
-  .navbar-logo h1 {
-    color: #fff;
-    margin: 0;
-  }
-  
-  /* Navbar menu styling */
-  .navbar-menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Menu items */
-  .navbar-menu li {
-    position: relative;
-    margin-left: 20px;
-  }
-  
-  /* Links and dropdown trigger */
-  .navbar-menu li a,
-  .dropbtn {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    white-space: nowrap; /* Prevent text wrap for "Account" */
-  }
-  
-  /* Dropdown container (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0; /* Align to the right edge of its parent */
-    background-color: #444;
-    min-width: 120px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    border-radius: 4px;
-    z-index: 999; /* Ensure it stays above other elements */
-  }
-  
-  /* Dropdown items styling */
-  .dropdown-content li {
-    margin: 0;
-  }
-  
-  /* Dropdown links styling */
-  .dropdown-content li a {
-    padding: 10px 15px;
-  }
-  
-  /* Show dropdown on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Hover effect for dropdown links */
-  .dropdown-content li a:hover {
-    background-color: #555;
-  }
-  
+/* Navbar.css */
+
+/* Custom gradient background for a modern look */
+.navbar-custom {
+  background: linear-gradient(90deg, #343a40, #212529);
+}
+
+/* Enhance brand appearance */
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Smooth color transition on nav links */
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+/* Accent color on hover for links */
+.nav-link:hover {
+  color: #ffc107; /* A subtle gold accent */
+}
+
+/* Refined styling for dropdown menu */
+.dropdown-menu {
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: subtle active state for dropdown items */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f8f9fa;
+  color: #212529;
+}

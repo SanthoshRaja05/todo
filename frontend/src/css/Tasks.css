@@ -5,6 +5,11 @@
     min-height: 100vh;
     background-color: #f8f9fa; /* Light gray to match Bootstrap's bg-light */
   }
+
+  /* Main card styling */
+  .card.shadow-sm {
+  border-radius: 6px;
+  }
   
   /* Optional hover effect for each task item */
   .list-group-item:hover {
@@ -31,3 +36,22 @@
     margin-right: 0;
   }
   
+  .pagination-container .btn {
+    margin-right: 0.25rem;
+  }
+  .pagination-container .btn:last-child {
+    margin-right: 0;
+  }
+
+  /* Make Mark All Completed button stand out slightly */
+  .btn-outline-secondary {
+  margin-right: 0.5rem; 
+  }
+
+  /* Buttons in .task-actions */
+.task-actions .btn {
+  margin-right: 0.25rem;
+}
+.task-actions .btn:last-child {
+  margin-right: 0;
+}
